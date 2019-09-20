@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import io.mine.ft.train.entity.User;
 
-public class LoginImpl implements Filter{
+public class LoginImpl implements Filter {
 
 	public void destroy() {
 		// TODO Auto-generated method stub
@@ -25,7 +25,7 @@ public class LoginImpl implements Filter{
 	HttpServletRequest req=(HttpServletRequest)request;
 	HttpServletResponse resp=(HttpServletResponse)response;
 	User user =(User)req.getSession().getAttribute("user");
-	if(user==null){
+	if (user == null) {
 		resp.sendRedirect(req.getContextPath()+"/login.jsp");
 		return;
 	}

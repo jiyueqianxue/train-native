@@ -11,35 +11,31 @@ import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletRequest;
 
-
-public class CodeImpl implements Filter{
+public class CodeImpl implements Filter {
 
 	public void destroy() {
 		// TODO Auto-generated method stub
-		
+
 	}
 
-	public void doFilter(ServletRequest request, ServletResponse response,
-			FilterChain chain) throws IOException, ServletException {
+	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
+			throws IOException, ServletException {
 		// TODO Auto-generated method stub
 		// TODO Auto-generated method stub
-			
-				HttpServletRequest req = (HttpServletRequest)request;
-				ServletContext ctx = req.getSession().getServletContext();
-				String encoding = ctx.getInitParameter("encoding");
-				
-				request.setCharacterEncoding(encoding);
-				response.setCharacterEncoding(encoding);
-				response.setContentType("text/html;charset=utf-8");
-				chain.doFilter(request, response);
-		}	
-	
+
+		HttpServletRequest req = (HttpServletRequest) request;
+		ServletContext ctx = req.getSession().getServletContext();
+		String encoding = ctx.getInitParameter("encoding");
+
+		request.setCharacterEncoding(encoding);
+		response.setCharacterEncoding(encoding);
+		response.setContentType("text/html;charset=utf-8");
+		chain.doFilter(request, response);
+	}
 
 	public void init(FilterConfig arg0) throws ServletException {
 		// TODO Auto-generated method stub
-		
+
 	}
-
-
 
 }

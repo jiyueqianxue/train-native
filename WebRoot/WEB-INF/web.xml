@@ -13,7 +13,7 @@
 	</context-param>
 	<filter>
 		<filter-name>filter</filter-name>
-		<filter-class>com.zpark.bb.filter.CodeImpl</filter-class>
+		<filter-class>io.mine.ft.train.filter.CodeImpl</filter-class>
 	</filter>
 	<filter-mapping>
 		<filter-name>filter</filter-name>
@@ -25,7 +25,7 @@
 
 	<filter>
 		<filter-name>filter2</filter-name>
-		<filter-class>com.zpark.bb.filter.LoginImpl</filter-class>
+		<filter-class>io.mine.ft.train.filter.LoginImpl</filter-class>
 	</filter>
 	<filter-mapping>
 		<filter-name>filter2</filter-name>
@@ -44,7 +44,7 @@
 
 	<servlet>
 		<servlet-name>LoginAction</servlet-name>
-		<servlet-class>com.zpark.bb.action.LoginAction</servlet-class>
+		<servlet-class>io.mine.ft.train.action.LoginAction</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>LoginAction</servlet-name>
@@ -52,7 +52,7 @@
 	</servlet-mapping>
 	<servlet>
 		<servlet-name>QueryAllInteractAction</servlet-name>
-		<servlet-class>com.zpark.bb.action.QueryAllInteractAction</servlet-class>
+		<servlet-class>io.mine.ft.train.action.QueryAllInteractAction</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>QueryAllInteractAction</servlet-name>
@@ -60,7 +60,7 @@
 	</servlet-mapping>
 	<servlet>
 		<servlet-name>VagueQueryInteractAction</servlet-name>
-		<servlet-class>com.zpark.bb.action.VagueQueryInteractAction</servlet-class>
+		<servlet-class>io.mine.ft.train.action.VagueQueryInteractAction</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>VagueQueryInteractAction</servlet-name>
@@ -69,7 +69,7 @@
 
 	<servlet>
 		<servlet-name>VagueQueryTeacherAction</servlet-name>
-		<servlet-class>com.zpark.bb.action.VagueQueryTeacherAction</servlet-class>
+		<servlet-class>io.mine.ft.train.action.VagueQueryTeacherAction</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>VagueQueryTeacherAction</servlet-name>
@@ -78,7 +78,7 @@
 
 	<servlet>
 		<servlet-name>QueryAllTeacherAction</servlet-name>
-		<servlet-class>com.zpark.bb.action.QueryAllTeacherAction</servlet-class>
+		<servlet-class>io.mine.ft.train.action.QueryAllTeacherAction</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>QueryAllTeacherAction</servlet-name>
@@ -86,7 +86,7 @@
 	</servlet-mapping>
 	<servlet>
 		<servlet-name>CreateInteractAction</servlet-name>
-		<servlet-class>com.zpark.bb.action.CreateInteractAction</servlet-class>
+		<servlet-class>io.mine.ft.train.action.CreateInteractAction</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>CreateInteractAction</servlet-name>
@@ -94,7 +94,7 @@
 	</servlet-mapping>
 	<servlet>
 		<servlet-name>DeleteInteractByIdAction</servlet-name>
-		<servlet-class>com.zpark.bb.action.DeleteInteractByIdAction</servlet-class>
+		<servlet-class>io.mine.ft.train.action.DeleteInteractByIdAction</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>DeleteInteractByIdAction</servlet-name>
@@ -102,7 +102,7 @@
 	</servlet-mapping>
 	<servlet>
 		<servlet-name>QueryInteractDetailAction</servlet-name>
-		<servlet-class>com.zpark.bb.action.QueryInteractDetailAction</servlet-class>
+		<servlet-class>io.mine.ft.train.action.QueryInteractDetailAction</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>QueryInteractDetailAction</servlet-name>
@@ -111,7 +111,7 @@
 
 	<servlet>
 		<servlet-name>EstimateAccusationUpdateAction</servlet-name>
-		<servlet-class>com.zpark.bb.action.EstimateAccusationUpdateAction</servlet-class>
+		<servlet-class>io.mine.ft.train.action.EstimateAccusationUpdateAction</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>EstimateAccusationUpdateAction</servlet-name>
