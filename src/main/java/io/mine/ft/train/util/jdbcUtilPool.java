@@ -20,7 +20,7 @@ public class jdbcUtilPool {
 			if (conn == null) {
 				Context ctx = new InitialContext();
 				DataSource ds = (DataSource) ctx
-						.lookup("java:comp/env/jdbc/oracle");
+						.lookup("java:comp/env/jdbc/MysqlDb");
 				conn = ds.getConnection();
 				tdl.set(conn);
 			}

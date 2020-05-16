@@ -14,7 +14,7 @@ public class JdbcUtil {
 	private static Properties prop=new Properties(); 
 	static {
 		try {
-			InputStream is=JdbcUtil.class.getResourceAsStream("/com/zpark/bb/conf/db.properties");
+			InputStream is=JdbcUtil.class.getResourceAsStream("/conf/db.properties");
 			prop.load(is);
 			String driverClassName=prop.getProperty("driverClassName");
 			Class.forName(driverClassName);
